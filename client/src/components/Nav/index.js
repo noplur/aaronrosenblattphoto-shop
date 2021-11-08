@@ -41,15 +41,24 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
+      <a href="http://www.aaronrosenblattphoto.com" target="_blank">
+      <img
+          src="/images/ar.jpg" height="75px" width="190px"
+        /></a>
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
+          {/* <span role="img" aria-label="shopping bag">🛍️</span>
+          -Shop-Shop */}
         </Link>
       </h1>
 
       <nav>
         {showNavigation()}
+        <div>
+          <img
+          src="/Users/aaronr/Desktop/aaronrosenblattphoto-shop/client/src/components/Nav/ar.jpg"
+          alt=""
+        /></div>
       </nav>
     </header>
   );
