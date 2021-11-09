@@ -23,17 +23,17 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
+        <ul className="signlog">
+          <p className="mx-1">
             <Link to="/signup">
-              Signup
+            Signup
             </Link>
-          </li>
-          <li className="mx-1">
+          </p>
+          <p className="mx-1">
             <Link to="/login">
               Login
             </Link>
-          </li>
+          </p>
         </ul>
       );
     }
@@ -43,22 +43,33 @@ function Nav() {
     <header className="flex-row px-1">
       <a href="http://www.aaronrosenblattphoto.com" target="_blank">
       <img
-          src="/images/ar.jpg" height="75px" width="190px"
+          src="/images/logo.jpg" alt="logo" height="75px" width="190px"
         /></a>
-      <h1>
-        <Link to="/">
-          {/* <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop */}
-        </Link>
-      </h1>
-
       <nav>
         {showNavigation()}
-        <div>
-          <img
-          src="/Users/aaronr/Desktop/aaronrosenblattphoto-shop/client/src/components/Nav/ar.jpg"
-          alt=""
-        /></div>
+        <ul className="signlog">
+      <p className="mx-1">
+        <Link to="/">
+          <span role="img" aria-label="shopping bag">Store</span>
+        </Link>
+      </p>
+      </ul>
+      <p className="title">
+        PORTFOLIOS
+      </p>
+      <p className="subtitle">
+        DAILY LIFE
+        SPORTS
+      </p>
+      <p className="title1">
+        STORIES
+      </p>
+      <p className="subtitle">
+        TALIYAH: WARRIOR PRINCESS
+        HOLDING HIS OWN
+        LEAVING MAPLE GROVE
+        RICHARD SULLENTRUP
+      </p>
       </nav>
     </header>
   );
