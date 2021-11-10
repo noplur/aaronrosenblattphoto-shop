@@ -113,11 +113,11 @@ img {
   max-width: 100%;
 }
 
-/* span[role="img"] {
+span[role="img"] {
   cursor: default;
   width: 100%;
   height: 100%;
-} */
+}
 
 form {
   width: 40%;
@@ -150,34 +150,49 @@ input:focus {
 }
 
 .signlog {
-  width: 5%;
+  width: 15%;
 }
 
 li {
   text-decoration: none;
 }
 
-.title {
-  width: 5%;
-  color:#000000;
-  font-size: 12px;
-  font-family: "eurostile" "helvetica";
+.vertNav {
+  position: fixed;
+  height: 100%;
+  width: 16%;
+  padding: 30px 0px 0px 20px;
+  z-index: 999;
+  background-color: #FFF;
 }
 
-.title1 {
-  width: 5%;
-  color:#000000;
-  font-size: 12px;
-  font-family: "eurostile" "helvetica";
-  margin-top: 45%;
+.arlogo {
+  position: relative;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 0px;
+  display: block;
+  /* padding-bottom: 6px; */
+  font-size: 11px;
+  color: black;
+  font-family: sans-serif;
 }
 
 .subtitle {
-  width: 5%;
-  color:#999999;
-  position:fixed;
-  font-size: 12px;
-  font-family: "eurostile" "helvetica";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999;
+  text-decoration: none;
+  position: relative;
+  left: 0px;
+  font-size: 11px;
+  font-family: sans-serif;
+  line-height: 1.231;
 }
 
 .space-between {
@@ -189,11 +204,11 @@ li {
 }
 
 .mx-1 {
-  float: left;
-  font-family: "eurostile" "helvetica";
+  /* float: left;
+  font-family: "eurostile" "helvetica"; */
   
-  /* margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one); */
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
 }
 
 .mx-2 {
@@ -214,6 +229,7 @@ li {
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
+  
 }
 
 .px-2 {

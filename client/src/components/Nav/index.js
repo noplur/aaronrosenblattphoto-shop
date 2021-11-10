@@ -41,36 +41,63 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
+    <div className="vertNav">
+    <p className="arlogo">
       <a href="http://www.aaronrosenblattphoto.com" target="_blank">
       <img
           src="/images/logo.jpg" alt="logo" height="75px" width="190px"
-        /></a>
-      <nav>
-        {showNavigation()}
-        <ul className="signlog">
-      <p className="mx-1">
-        <Link to="/">
-          <span role="img" aria-label="shopping bag">Store</span>
-        </Link>
-      </p>
-      </ul>
+        /></a></p>
       <p className="title">
-        PORTFOLIOS
+        portfolios
       </p>
       <p className="subtitle">
-        DAILY LIFE
-        SPORTS
-      </p>
-      <p className="title1">
-        STORIES
+        daily life
       </p>
       <p className="subtitle">
-        TALIYAH: WARRIOR PRINCESS
-        HOLDING HIS OWN
-        LEAVING MAPLE GROVE
-        RICHARD SULLENTRUP
+        sports
       </p>
-      </nav>
+      <p className="title">
+        stories
+      </p>
+      <p className="subtitle">
+        taliyah: warrior princess
+      </p>
+      <p className="subtitle">
+        holding his own
+      </p>
+      <p className="subtitle">
+        leaving maple grove
+      </p>
+      <p className="subtitle">
+        richard sullentrup
+      </p>
+      <p className="title">
+        multimedia
+      </p>
+      <p className="subtitle">
+        45 years of coaching
+      </p>
+      <p className="subtitle">
+        tuesday night music club
+      </p>
+      <p className="subtitle">
+        refugees faith & community
+      </p>
+      <p className="title">
+        recent work
+      </p>
+    
+    <nav>
+      {showNavigation()}
+      <ul className="signlog">
+    <p className="mx-1">
+      <Link to="/">
+        <span role="img" aria-label="shopping bag">Store</span>
+      </Link>
+    </p>
+    </ul>
+    </nav>
+    </div>
     </header>
   );
 }
