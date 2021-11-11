@@ -51,42 +51,79 @@ function Nav() {
         portfolios
       </p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com" target="_blank">
         daily life
-      </p>
+        </a></p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/sports" target="_blank">
         sports
-      </p>
+      </a></p>
       <p className="title">
         stories
       </p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/taliyah-warrior-princess" target="_blank">
         taliyah: warrior princess
-      </p>
+        </a></p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/holding_his_own" target="_blank">
         holding his own
-      </p>
+        </a></p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/leaving_maple_grove" target="_blank">
         leaving maple grove
-      </p>
+        </a></p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/richard_sullentrup" target="_blank">
         richard sullentrup
-      </p>
+      </a></p>
       <p className="title">
         multimedia
       </p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/pages/45-years-of-coaching" target="_blank">
         45 years of coaching
-      </p>
+      </a></p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/pages/tuesday-night-music-club" target="_blank">
         tuesday night music club
-      </p>
+      </a></p>
       <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/pages/regugees-faith-community" target="_blank">
         refugees faith & community
-      </p>
+      </a></p>
       <p className="title">
         recent work
       </p>
-    
+      <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/blog" target="_blank">
+        blog
+      </a></p>
+      <p className="subtitle">
+      <a href="http://hangingatmos.blogspot.com/" target="_blank">
+        archive
+      </a></p>
+      <p className="subtitle">
+      <a href="https://www.instagram.com/aaronpix/" target="_blank">
+        instagram
+      </a></p>
+      <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/weddings" target="_blank">
+        weddings
+      </a></p>
+      <p className="subtitle">
+      <a href="/" target="_blank">
+        store
+      </a></p>
+      <p className="title">
+        about
+      </p>
+      <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/pages/bio" target="_blank">
+        bio
+      </a></p>
+      <div className="social-buttons">
+        </div>
     <nav>
       {showNavigation()}
       <ul className="signlog">
