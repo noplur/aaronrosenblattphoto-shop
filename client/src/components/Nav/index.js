@@ -1,6 +1,8 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import { RiTwitterFill } from 'react-icons/ri';
+import { ImInstagram } from 'react-icons/im';
 
 function Nav() {
 
@@ -23,13 +25,13 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="signlog">
-          <p className="mx-1">
+        <ul className="signuplogin">
+          <div className="signup">
             <Link to="/signup">
-            Signup
+              Signup
             </Link>
-          </p>
-          <p className="mx-1">
+          </div>
+          <p className="signup">
             <Link to="/login">
               Login
             </Link>
@@ -111,10 +113,6 @@ function Nav() {
       <a href="http://www.aaronrosenblattphoto.com/weddings" target="_blank">
         weddings
       </a></p>
-      <p className="subtitle">
-      <a href="/" target="_blank">
-        store
-      </a></p>
       <p className="title">
         about
       </p>
@@ -122,18 +120,20 @@ function Nav() {
       <a href="http://www.aaronrosenblattphoto.com/pages/bio" target="_blank">
         bio
       </a></p>
-      <div className="social-buttons">
-        </div>
     <nav>
-      {showNavigation()}
-      <ul className="signlog">
-    <p className="mx-1">
+    {showNavigation()}
+    <p className="subtitle">
       <Link to="/">
-        <span role="img" aria-label="shopping bag">Store</span>
+        Shop
       </Link>
     </p>
-    </ul>
     </nav>
+    <div className="twitter"><a href="https://twitter.com/aaronpix" target="_blank">
+      <RiTwitterFill /> </a>
+    </div>
+    <div className="instagram"><a href="https://www.instagram.com/aaronpix/" target="_blank"><ImInstagram /> 
+    </a>
+    </div>
     </div>
     </header>
   );

@@ -156,7 +156,13 @@ input:focus {
 }
 
 .signlog {
-  width: 15%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 0px;
+  display: block;
+  font-size: 11px;
+  color: black;
+  font-family: sans-serif;
 }
 
 li {
@@ -183,7 +189,6 @@ li {
   text-transform: uppercase;
   margin-left: 0px;
   display: block;
-  /* padding-bottom: 6px; */
   font-size: 11px;
   color: black;
   font-family: sans-serif;
@@ -200,10 +205,55 @@ li {
   font-family: sans-serif;
   line-height: .95;
   cursor: pointer;
+  margin-left: 0px;
 }
 
 .subtitle:hover {
   color: black
+}
+
+.signuplogin {
+  margin-left: -15%;
+}
+
+.signup {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  font-size: 11px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.twitter {
+  font-size: 13px;
+  color: black;
+  background-color: lightgrey;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 25px;
+  text-decoration: none;
+}
+
+.instagram{
+  font-size: 13px;
+  color: black;
+  background-color: lightgrey;
+  margin-top: -10%;
+  margin-left: 15%;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 25px;
+  text-decoration: none;
+}
+
+.twitter:focus {
+  font-size: 13px;
+  color: black;
+  background-color: lightgrey;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 25px;
 }
 
 .space-between {
@@ -215,8 +265,6 @@ li {
 }
 
 .mx-1 {
-  /* float: left;
-  font-family: "eurostile" "helvetica"; */
   
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
