@@ -146,8 +146,9 @@ input:focus {
 .container {
   width: 85%;
   max-width: 1200px;
-  margin-left: auto;
+  margin-left: 10%;
   margin-right: auto;
+  margin-top: 0;
 }
 
 .flex-row {
@@ -179,9 +180,23 @@ li {
 }
 
 .arlogo {
-  position: relative;
   margin-bottom: 30px;
   display: block;
+  width: 100%;
+  vertical-align: middle;
+  position: fixed;
+}
+
+.title-first {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 0px;
+  display: block;
+  font-size: 11px;
+  color: black;
+  font-family: sans-serif;
+  margin-top: 50%;
+  position: relative;
 }
 
 .title {
@@ -223,6 +238,8 @@ li {
   font-size: 11px;
   color: black;
   font-family: sans-serif;
+  cursor: pointer;
+  position: relative;
 }
 
 .twitter {
@@ -231,29 +248,33 @@ li {
   background-color: lightgrey;
   padding-left: 5px;
   padding-top: 5px;
+  margin-right: 1%;
   width: 25px;
   text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  vertical-align: middle;
 }
 
-.instagram{
+.instagram {
   font-size: 13px;
-  color: black;
   background-color: lightgrey;
-  margin-top: -10%;
-  margin-left: 15%;
+  margin-top: 0;
+  margin-left: 120%;
   padding-left: 5px;
   padding-top: 5px;
   width: 25px;
-  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
 }
 
-.twitter:focus {
-  font-size: 13px;
-  color: black;
-  background-color: lightgrey;
-  padding-left: 5px;
-  padding-top: 5px;
-  width: 25px;
+.socialButtons {
+  
+  background-color: greenyellow;
+  vertical-align: middle;
+  position: fixed;
+ 
 }
 
 .space-between {
@@ -316,8 +337,23 @@ li {
   color: var(--error);
 }
 
+@media screen and (max-width: 950px) {
+  .container {
+    margin-top: 13%;
+  }
+  .title-first {
+  margin-top: 70%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+  .title-first {
+    margin-top: 100%;
+    }
+  .container {
+    margin-top: 16%;
   }
 }

@@ -49,7 +49,7 @@ function Nav() {
       <img
           src="/images/logo.jpg" alt="logo" height="75px" width="190px"
         /></a></p>
-      <p className="title">
+      <p className="title-first">
         portfolios
       </p>
       <p className="subtitle">
@@ -128,11 +128,13 @@ function Nav() {
       </Link>
     </p>
     </nav>
+    <div className="socialButtons">
     <div className="twitter"><a href="https://twitter.com/aaronpix" target="_blank">
       <RiTwitterFill /> </a>
     </div>
     <div className="instagram"><a href="https://www.instagram.com/aaronpix/" target="_blank"><ImInstagram /> 
     </a>
+    </div>
     </div>
     </div>
     </header>
