@@ -18,12 +18,39 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Queechee, Vt.',
+      name: 'Queechee, Vt. 5x7 Print',
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[0]._id,
-      price: 2.99,
+      price: 20.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 8x12 Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[0]._id,
+      price: 27.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 12x18 Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[0]._id,
+      price: 45.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 16x24 Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[0]._id,
+      price: 73.00,
       quantity: 500
     },
     {

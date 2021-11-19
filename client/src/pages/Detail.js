@@ -100,7 +100,7 @@ function Detail() {
           </p>
 
           <p>
-            <strong>Price:</strong>
+            <strong>Price: </strong>
             ${currentProduct.price}
             {" "}
             <button onClick={addToCart}>
