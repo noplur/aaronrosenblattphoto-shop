@@ -54,12 +54,39 @@ db.once('open', async () => {
       quantity: 500
     },
     {
-      name: 'San Francisco Ferry',
+      name: 'San Francisco Ferry  5x7 Print',
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
       category: categories[0]._id,
-      price: 1.99,
+      price: 20.00,
+      quantity: 500
+    },
+    {
+      name: 'San Francisco Ferry  8x12 Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[0]._id,
+      price: 27.00,
+      quantity: 500
+    },
+    {
+      name: 'San Francisco Ferry  12x18 Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[0]._id,
+      price: 45.00,
+      quantity: 500
+    },
+    {
+      name: 'San Francisco Ferry  16x24 Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[0]._id,
+      price: 73.00,
       quantity: 500
     },
     {
