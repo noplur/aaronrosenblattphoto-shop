@@ -1,4 +1,3 @@
-
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
