@@ -91,7 +91,7 @@ function Detail() {
       {currentProduct ? (
         <div className="container-picture my-1">
           <Link to="/">
-            ← Back to Catalogue
+            ← Back to Products
           </Link>
 
           <h2>{currentProduct.name}</h2>

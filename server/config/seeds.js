@@ -5,11 +5,11 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Sketch' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: '5x7 Prints' },
+    { name: '8x12 Prints' },
+    { name: '12x18 Prints' },
+    { name: '16x24 Prints' },
+    { name: 'Books' }
   ]);
 
   console.log('categories seeded');
@@ -31,7 +31,7 @@ db.once('open', async () => {
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: 27.00,
       quantity: 500
     },
@@ -40,7 +40,7 @@ db.once('open', async () => {
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
-      category: categories[0]._id,
+      category: categories[2]._id,
       price: 45.00,
       quantity: 500
     },
@@ -49,7 +49,7 @@ db.once('open', async () => {
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
-      category: categories[0]._id,
+      category: categories[3]._id,
       price: 73.00,
       quantity: 500
     },
@@ -67,7 +67,7 @@ db.once('open', async () => {
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: 27.00,
       quantity: 500
     },
@@ -76,7 +76,7 @@ db.once('open', async () => {
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
-      category: categories[0]._id,
+      category: categories[2]._id,
       price: 45.00,
       quantity: 500
     },
@@ -85,7 +85,7 @@ db.once('open', async () => {
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
-      category: categories[0]._id,
+      category: categories[3]._id,
       price: 73.00,
       quantity: 500
     },

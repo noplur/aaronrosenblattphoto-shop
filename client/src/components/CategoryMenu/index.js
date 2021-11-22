@@ -39,10 +39,10 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      {/* <h2>Choose a Category:</h2>
+    <div className="category">
+      <h2 className="category-text">Choose a Category:</h2>
       {categories.map(item => (
-        <button
+        <button className="category-button"
           key={item._id}
           onClick={() => {
             handleClick(item._id);
@@ -50,7 +50,7 @@ function CategoryMenu() {
         >
           {item.name}
         </button>
-      ))} */}
+      ))}
     </div>
   );
 }

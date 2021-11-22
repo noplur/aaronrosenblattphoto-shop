@@ -151,6 +151,22 @@ input:focus {
   margin-top: 0;
 }
 
+.category {
+  margin-left: 16%;
+  margin-top: 5%;
+}
+
+.category-text{
+  font-size: 24px;
+  color: black;
+  font-family: sans-serif;
+  margin-bottom: 2%;
+}
+
+.category-button {
+  margin-right: 1%;
+}
+
 .container-picture {
   width: 85%;
   max-width: 1200px;
@@ -190,7 +206,7 @@ li {
 .arlogo {
   margin-bottom: 30px;
   display: block;
-  width: 100%;
+  width: 20%;
   vertical-align: middle;
   position: fixed;
 }
@@ -373,6 +389,9 @@ li {
   .title-first {
   margin-top: 70%;
   }
+  .category-button {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -387,5 +406,11 @@ li {
   }
   .container-picture {
     margin-left: 45%;
+  }
+  .category {
+    margin-top: 23%;
+  }
+  .category-button {
+    font-size: 12px;
   }
 }
