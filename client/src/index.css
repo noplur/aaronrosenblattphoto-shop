@@ -115,6 +115,10 @@ button[disabled] {
   opacity: .8;
 }
 
+.detail-font {
+  font-family: sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -149,6 +153,23 @@ input:focus {
   margin-left: 10%;
   margin-right: auto;
   margin-top: 0;
+}
+
+.category {
+  margin-left: 16%;
+  margin-top: 5%;
+}
+
+.category-text{
+  font-size: 24px;
+  color: black;
+  font-family: sans-serif;
+  margin-bottom: 2%;
+}
+
+.category-button {
+  margin-right: 1%;
+  margin-bottom: 1%;
 }
 
 .container-picture {
@@ -190,7 +211,7 @@ li {
 .arlogo {
   margin-bottom: 30px;
   display: block;
-  width: 100%;
+  width: 20%;
   vertical-align: middle;
   position: fixed;
 }
@@ -278,10 +299,26 @@ li {
 }
 
 .socialButtons {
-  
   vertical-align: middle;
   position: fixed;
  
+}
+
+.product-item-name {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.product-item-price {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.product-item-button {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 8%;
 }
 
 .space-between {
@@ -357,6 +394,9 @@ li {
   .title-first {
   margin-top: 70%;
   }
+  .category-button {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -371,5 +411,11 @@ li {
   }
   .container-picture {
     margin-left: 45%;
+  }
+  .category {
+    margin-top: 23%;
+  }
+  .category-button {
+    font-size: 12px;
   }
 }
