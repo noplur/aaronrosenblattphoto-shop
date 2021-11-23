@@ -115,6 +115,10 @@ button[disabled] {
   opacity: .8;
 }
 
+.detail-font {
+  font-family: sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -165,6 +169,7 @@ input:focus {
 
 .category-button {
   margin-right: 1%;
+  margin-bottom: 1%;
 }
 
 .container-picture {

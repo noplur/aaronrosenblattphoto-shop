@@ -5,10 +5,14 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: '5x7 Prints' },
-    { name: '8x12 Prints' },
-    { name: '12x18 Prints' },
-    { name: '16x24 Prints' },
+    { name: '5x7 Lustre Prints' },
+    { name: '5x7 Matte Prints' },
+    { name: '8x12 Lustre Prints' },
+    { name: '8x12 Matte Prints' },
+    { name: '12x18 Lustre Prints' },
+    { name: '12x18 Matte Prints' },
+    { name: '16x24 Lustre Prints' },
+    { name: '16x24 Matte Prints' },
     { name: 'Books' }
   ]);
 
@@ -18,7 +22,7 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Queechee, Vt. 5x7 Print',
+      name: 'Queechee, Vt. 5x7 Lustre Print',
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
@@ -27,30 +31,66 @@ db.once('open', async () => {
       quantity: 500
     },
     {
-      name: 'Queechee, Vt. 8x12 Print',
+      name: 'Queechee, Vt. 5x7 Matte Print',
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[1]._id,
-      price: 27.00,
+      price: 21.00,
       quantity: 500
     },
     {
-      name: 'Queechee, Vt. 12x18 Print',
+      name: 'Queechee, Vt. 8x12 Lustre Print',
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[2]._id,
-      price: 45.00,
+      price: 27.00,
       quantity: 500
     },
     {
-      name: 'Queechee, Vt. 16x24 Print',
+      name: 'Queechee, Vt. 8x12 Matte Print',
       description:
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[3]._id,
+      price: 29.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 12x18 Lustre Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[4]._id,
+      price: 45.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 12x18 Matte Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[5]._id,
+      price: 49.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 16x24 Lustre Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[6]._id,
       price: 73.00,
+      quantity: 500
+    },
+    {
+      name: 'Queechee, Vt. 16x24 Matte Print',
+      description:
+        'Vermont forest',
+      image: 'store-0001.jpg',
+      category: categories[7]._id,
+      price: 85.00,
       quantity: 500
     },
     {
@@ -91,7 +131,7 @@ db.once('open', async () => {
     },
     {
       name: 'Trampoline',
-      category: categories[1]._id,
+      category: categories[8]._id,
       description:
         'Bulger, Penn.',
       image: 'store-0003.jpg',
