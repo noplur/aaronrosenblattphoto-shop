@@ -258,6 +258,11 @@ li {
 
 .signuplogin {
   margin-left: -15%;
+  font-family: sans-serif;
+}
+
+.signup-info{
+  font-family: sans-serif;
 }
 
 .signup {
@@ -302,6 +307,10 @@ li {
   vertical-align: middle;
   position: fixed;
  
+}
+
+.signup-container{
+  margin-left: 30%;
 }
 
 .product-item-name {
