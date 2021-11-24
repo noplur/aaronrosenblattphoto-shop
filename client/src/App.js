@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
+// for email verification
+// import Notifications from 'react-notify-toast'
+// import 'react-toastify/dist/ReactToastify.css'
+// end of email verification
+
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
