@@ -60,6 +60,10 @@
     padding: 0;
     margin: 0 .5rem 1rem 0;
   }
+
+  .cart-text {
+    font-family: sans-serif;
+  }
   
   @media screen and (max-width: 1200px) {
     .cart {
