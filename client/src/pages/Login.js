@@ -44,6 +44,7 @@ function Login(props) {
             name="email"
             type="email"
             id="email"
+            required
             onChange={handleChange}
           />
         </div>
@@ -54,6 +55,8 @@ function Login(props) {
             name="password"
             type="password"
             id="pwd"
+            required
+            minLength="5"
             onChange={handleChange}
           />
         </div>
@@ -63,7 +66,7 @@ function Login(props) {
           </div> : null
         }
         <div className="flex-row flex-end signup-info">
-          <button type="submit">
+          <button type="submit" disabled={!(formState.email && formState.password)}>
             Submit
           </button>
         </div>
