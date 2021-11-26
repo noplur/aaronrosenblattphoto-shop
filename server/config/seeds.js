@@ -27,7 +27,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[0]._id,
-      price: 20.00,
+      price: 20.50,
       quantity: 500
     },
     {
@@ -36,7 +36,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[1]._id,
-      price: 21.00,
+      price: 21.50,
       quantity: 500
     },
     {
@@ -45,7 +45,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[2]._id,
-      price: 27.00,
+      price: 27.50,
       quantity: 500
     },
     {
@@ -54,7 +54,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[3]._id,
-      price: 29.00,
+      price: 29.50,
       quantity: 500
     },
     {
@@ -63,7 +63,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[4]._id,
-      price: 45.00,
+      price: 45.50,
       quantity: 500
     },
     {
@@ -72,7 +72,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[5]._id,
-      price: 49.00,
+      price: 49.50,
       quantity: 500
     },
     {
@@ -81,7 +81,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[6]._id,
-      price: 73.00,
+      price: 73.50,
       quantity: 500
     },
     {
@@ -90,7 +90,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[7]._id,
-      price: 85.00,
+      price: 85.50,
       quantity: 500
     },
     {
