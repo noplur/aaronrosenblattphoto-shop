@@ -3,7 +3,90 @@ const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
+//for Strip fulfillment
+
+// This is your Stripe CLI webhook secret for testing your endpoint locally.  use: getenv('STRIPE_WEBHOOK_SECRET')
+const endpointSecret = "whsec_7ZmonwkcLj6D68chlHEwEPj2coqnP3qz";
+
+// Using Express
+const app = require('express')();
+
+// Use body-parser to retrieve the raw body as a buffer
+const bodyParser = require('body-parser');
+
+const fulfillOrder = (session) => {
+  // TODO: fill me in
+  console.log("Fulfilling order", session);
+}
+
+const createOrder = (session) => {
+  // TODO: fill me in
+  console.log("Creating order", session);
+}
+
+const emailCustomerAboutFailedPayment = (session) => {
+  // TODO: fill me in
+  console.log("Emailing customer", session);
+}
+
+app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
+  const payload = request.body;
+  const sig = request.headers['stripe-signature'];
+
+  let event;
+
+  try {
+    event = stripe.webhooks.constructEvent(payload, sig, endpointSecret);
+  } catch (err) {
+    return response.status(400).send(`Webhook Error: ${err.message}`);
+  }
+
+  switch (event.type) {
+    case 'checkout.session.completed': {
+      const session = event.data.object;
+      // Save an order in your database, marked as 'awaiting payment'
+      createOrder(session);
+
+      // Check if the order is paid (e.g., from a card payment)
+      //
+      // A delayed notification payment will have an `unpaid` status, as
+      // you're still waiting for funds to be transferred from the customer's
+      // account.
+      if (session.payment_status === 'paid') {
+        fulfillOrder(session);
+      }
+
+      break;
+    }
+
+    case 'checkout.session.async_payment_succeeded': {
+      const session = event.data.object;
+
+      // Fulfill the purchase...
+      fulfillOrder(session);
+
+      break;
+    }
+
+    case 'checkout.session.async_payment_failed': {
+      const session = event.data.object;
+
+      // Send an email to the customer asking them to retry their order
+      emailCustomerAboutFailedPayment(session);
+
+      break;
+    }
+  }
+
+  response.status(200);
+});
+
+app.listen(4242, () => console.log('Running on port 4242'));
+
+// end of Stripe fulfillment
+
 const resolvers = {
+  
   Query: {
     categories: async () => {
       return await Category.find();

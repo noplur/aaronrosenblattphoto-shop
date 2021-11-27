@@ -167,9 +167,20 @@ input:focus {
   margin-bottom: 2%;
 }
 
+.category-text-small{
+  font-size: 18px;
+  color: darkgray;
+  font-family: sans-serif;
+  margin-bottom: 2%;
+}
+
 .category-button {
   margin-right: 1%;
   margin-bottom: 1%;
+}
+
+.order-history {
+  padding-left: -50%;
 }
 
 .container-picture {
