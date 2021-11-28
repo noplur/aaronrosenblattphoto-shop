@@ -197,7 +197,7 @@ db.once('open', async () => {
       description:
         'Rapid City, S.D.',
       image: 'store-0010.jpg',
-      price: 2.99,
+      price: 1.01,
       quantity: 1000
     },
     {
