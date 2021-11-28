@@ -1,15 +1,14 @@
+require('dotenv').config();
+
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
-
-require('dotenv').config();
-// const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
-const stripe = require('stripe'){{ env('STRIPE_CLIENT_ID') }};
+const stripe = require('stripe')(process.env.STRIPE_CLIENT_ID);
 
 //for Strip fulfillment
 
-// This is your Stripe CLI webhook secret for testing your endpoint locally.
-const endpointSecret = {{ env('STRIPE_WEBHOOK_SECRET') }};
+// This is your Stripe CLI webhook secret for testing your endpoint locally.  use: getenv('STRIPE_WEBHOOK_SECRET')
+const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 // Using Express
 const app = require('express')();
