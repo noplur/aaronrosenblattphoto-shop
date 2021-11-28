@@ -63,6 +63,7 @@
 
   .cart-text {
     font-family: sans-serif;
+    font-size: 16px;
   }
   
   @media screen and (max-width: 1200px) {
@@ -72,6 +73,28 @@
       max-height: auto;
       box-shadow: none;
       background-color: inherit;
+    }
+  
+    .cart-closed {
+      font-size: 1.5rem;
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .cart {
+      position: fixed;
+      top: 0;
+      right: 0;
+      min-width: 20%;
+      max-width: 30%;
+      max-height: 60%;
+      background-color: var(--light);
+      overflow: auto;
+      padding: .5rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+      border-bottom-left-radius: .5rem;
     }
   
     .cart-closed {
