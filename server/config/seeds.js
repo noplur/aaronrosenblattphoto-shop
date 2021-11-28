@@ -4,6 +4,8 @@ const { User, Product, Category } = require('../models');
 db.once('open', async () => {
   await Category.deleteMany();
 
+  ///
+
   const categories = await Category.insertMany([
     { name: '5x7 Lustre Prints' },
     { name: '5x7 Matte Prints' },
