@@ -210,7 +210,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'American Flag',
+      name: 'American Flags',
       category: categories[4]._id,
       description:
         'New York, N.Y.',
