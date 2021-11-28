@@ -8,8 +8,8 @@ const stripe = require('stripe'){{ env('STRIPE_CLIENT_ID') }};
 
 //for Strip fulfillment
 
-// This is your Stripe CLI webhook secret for testing your endpoint locally.  use: getenv('STRIPE_WEBHOOK_SECRET')
-const endpointSecret = "whsec_7ZmonwkcLj6D68chlHEwEPj2coqnP3qz";
+// This is your Stripe CLI webhook secret for testing your endpoint locally.
+const endpointSecret = {{ env('STRIPE_WEBHOOK_SECRET') }};
 
 // Using Express
 const app = require('express')();
