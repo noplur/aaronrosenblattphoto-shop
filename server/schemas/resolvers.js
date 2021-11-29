@@ -3,88 +3,87 @@ require('dotenv').config();
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
-// const stripe = require('stripe')(process.env.STRIPE_CLIENT_ID);
-const stripe = require('stripe')('pk_live_51JwzcFLzDJN6vPr4BdDQXOo0IJV2FrFZFlGulRlolx5mhfUOX378ZxVyrcZBw5IculVENGLLJ3X6KwTDvZJMcyEc00C5YcvkRI');
+const stripe = require('stripe')('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');
 
 //for Strip fulfillment
 
 // This is your Stripe CLI webhook secret for testing your endpoint locally.  use: getenv('STRIPE_WEBHOOK_SECRET')
-const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
+// const endpointSecret = 'sk_test_51JwzcFLzDJN6vPr4qdUekNdohxYRQcR5B3qhozbM4NHQsZ0sbauSK7DjJMKgoL8zUziUC1JUMbxx5TV3jSP84t1600eKzwO26R';
 
-// Using Express
-const app = require('express')();
+// // Using Express
+// const app = require('express')();
 
-// Use body-parser to retrieve the raw body as a buffer
-const bodyParser = require('body-parser');
+// // Use body-parser to retrieve the raw body as a buffer
+// const bodyParser = require('body-parser');
 
-const fulfillOrder = (session) => {
-  // TODO: fill me in
-  console.log("Fulfilling order", session);
-}
+// const fulfillOrder = (session) => {
+//   // TODO: fill me in
+//   console.log("Fulfilling order", session);
+// }
 
-const createOrder = (session) => {
-  // TODO: fill me in
-  console.log("Creating order", session);
-}
+// const createOrder = (session) => {
+//   // TODO: fill me in
+//   console.log("Creating order", session);
+// }
 
-const emailCustomerAboutFailedPayment = (session) => {
-  // TODO: fill me in
-  console.log("Emailing customer", session);
-}
+// const emailCustomerAboutFailedPayment = (session) => {
+//   // TODO: fill me in
+//   console.log("Emailing customer", session);
+// }
 
-app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
-  const payload = request.body;
-  const sig = request.headers['stripe-signature'];
+// app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
+//   const payload = request.body;
+//   const sig = request.headers['stripe-signature'];
 
-  let event;
+//   let event;
 
-  try {
-    event = stripe.webhooks.constructEvent(payload, sig, endpointSecret);
-  } catch (err) {
-    return response.status(400).send(`Webhook Error: ${err.message}`);
-  }
+//   try {
+//     event = stripe.webhooks.constructEvent(payload, sig, endpointSecret);
+//   } catch (err) {
+//     return response.status(400).send(`Webhook Error: ${err.message}`);
+//   }
 
-  switch (event.type) {
-    case 'checkout.session.completed': {
-      const session = event.data.object;
-      // Save an order in your database, marked as 'awaiting payment'
-      createOrder(session);
+//   switch (event.type) {
+//     case 'checkout.session.completed': {
+//       const session = event.data.object;
+//       // Save an order in your database, marked as 'awaiting payment'
+//       createOrder(session);
 
-      // Check if the order is paid (e.g., from a card payment)
-      //
-      // A delayed notification payment will have an `unpaid` status, as
-      // you're still waiting for funds to be transferred from the customer's
-      // account.
-      if (session.payment_status === 'paid') {
-        fulfillOrder(session);
-      }
+//       // Check if the order is paid (e.g., from a card payment)
+//       //
+//       // A delayed notification payment will have an `unpaid` status, as
+//       // you're still waiting for funds to be transferred from the customer's
+//       // account.
+//       if (session.payment_status === 'paid') {
+//         fulfillOrder(session);
+//       }
 
-      break;
-    }
+//       break;
+//     }
 
-    case 'checkout.session.async_payment_succeeded': {
-      const session = event.data.object;
+//     case 'checkout.session.async_payment_succeeded': {
+//       const session = event.data.object;
 
-      // Fulfill the purchase...
-      fulfillOrder(session);
+//       // Fulfill the purchase...
+//       fulfillOrder(session);
 
-      break;
-    }
+//       break;
+//     }
 
-    case 'checkout.session.async_payment_failed': {
-      const session = event.data.object;
+//     case 'checkout.session.async_payment_failed': {
+//       const session = event.data.object;
 
-      // Send an email to the customer asking them to retry their order
-      emailCustomerAboutFailedPayment(session);
+//       // Send an email to the customer asking them to retry their order
+//       emailCustomerAboutFailedPayment(session);
 
-      break;
-    }
-  }
+//       break;
+//     }
+//   }
 
-  response.status(200);
-});
+//   response.status(200);
+// });
 
-app.listen(4242, () => console.log('Running on port 4242'));
+// app.listen(4242, () => console.log('Running on port 4242'));
 
 // end of Stripe fulfillment
 
