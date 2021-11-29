@@ -3,7 +3,8 @@ require('dotenv').config();
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe')(process.env.STRIPE_CLIENT_ID);
+// const stripe = require('stripe')(process.env.STRIPE_CLIENT_ID);
+const stripe = require('stripe')('pk_live_51JwzcFLzDJN6vPr4BdDQXOo0IJV2FrFZFlGulRlolx5mhfUOX378ZxVyrcZBw5IculVENGLLJ3X6KwTDvZJMcyEc00C5YcvkRI');
 
 //for Strip fulfillment
 
@@ -212,6 +213,27 @@ const resolvers = {
             maximum: {
               unit: 'business_day',
               value: 1,
+            },
+          }
+        }
+      },
+      {
+        shipping_rate_data: {
+          type: 'fixed_amount',
+          fixed_amount: {
+            amount: 0.00,
+            currency: 'usd',
+          },
+          display_name: 'Free Shipping',
+          // Delivers in exactly 2-3 business days
+          delivery_estimate: {
+            minimum: {
+              unit: 'business_day',
+              value: 2,
+            },
+            maximum: {
+              unit: 'business_day',
+              value: 3,
             },
           }
         }
