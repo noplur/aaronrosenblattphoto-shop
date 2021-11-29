@@ -12,6 +12,7 @@ import { useLazyQuery } from '@apollo/react-hooks';
 require('dotenv').config();
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC);
 
+
 const Cart = () => {
 
   const [state, dispatch] = useStoreContext();

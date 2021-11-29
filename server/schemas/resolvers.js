@@ -1,8 +1,9 @@
+require('dotenv').config();
+
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 
-require('dotenv').config();
 const stripe = require('stripe')(process.env.REACT_APP_STRIPE_SECRET)
 
 //for Strip fulfillment
