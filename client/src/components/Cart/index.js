@@ -1,4 +1,3 @@
-
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
@@ -10,7 +9,8 @@ import { QUERY_CHECKOUT } from '../../utils/queries';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/react-hooks';
 
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+require('dotenv').config();
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC);
 
 const Cart = () => {
 
