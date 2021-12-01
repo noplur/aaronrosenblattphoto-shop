@@ -4,8 +4,6 @@ const { User, Product, Category } = require('../models');
 db.once('open', async () => {
   await Category.deleteMany();
 
-  ///
-
   const categories = await Category.insertMany([
     { name: '5x7 Lustre Prints' },
     { name: '5x7 Matte Prints' },
@@ -15,7 +13,7 @@ db.once('open', async () => {
     { name: '12x18 Matte Prints' },
     { name: '16x24 Lustre Prints' },
     { name: '16x24 Matte Prints' },
-    { name: 'Books' }
+    // { name: 'Books' }
   ]);
 
   console.log('categories seeded');
@@ -29,7 +27,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[0]._id,
-      price: 20.50,
+      price: 20.55,
       quantity: 500
     },
     {
@@ -38,7 +36,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[1]._id,
-      price: 21.50,
+      price: 21.55,
       quantity: 500
     },
     {
@@ -47,7 +45,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[2]._id,
-      price: 27.50,
+      price: 27.55,
       quantity: 500
     },
     {
@@ -56,7 +54,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[3]._id,
-      price: 29.50,
+      price: 29.55,
       quantity: 500
     },
     {
@@ -65,7 +63,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[4]._id,
-      price: 45.50,
+      price: 45.55,
       quantity: 500
     },
     {
@@ -74,7 +72,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[5]._id,
-      price: 49.50,
+      price: 49.55,
       quantity: 500
     },
     {
@@ -83,7 +81,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[6]._id,
-      price: 73.50,
+      price: 73.55,
       quantity: 500
     },
     {
@@ -92,134 +90,450 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[7]._id,
-      price: 85.50,
+      price: 85.55,
       quantity: 500
     },
     {
-      name: 'San Francisco Ferry  5x7 Print',
+      name: 'San Francisco Ferry 5x7 Lustre Print',
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
       category: categories[0]._id,
-      price: 20.00,
+      price: 20.55,
       quantity: 500
     },
     {
-      name: 'San Francisco Ferry  8x12 Print',
+      name: 'San Francisco Ferry 5x7 Matte Print',
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
       category: categories[1]._id,
-      price: 27.00,
+      price: 21.55,
       quantity: 500
     },
     {
-      name: 'San Francisco Ferry  12x18 Print',
+      name: 'San Francisco Ferry 8x12 Lustre Print',
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
       category: categories[2]._id,
-      price: 45.00,
+      price: 27.55,
       quantity: 500
     },
     {
-      name: 'San Francisco Ferry  16x24 Print',
+      name: 'San Francisco Ferry 8x12 Matte Print',
       description:
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
       category: categories[3]._id,
-      price: 73.00,
+      price: 29.55,
       quantity: 500
     },
     {
-      name: 'Trampoline',
-      category: categories[8]._id,
+      name: 'San Francisco Ferry 12x18 Lustre Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'San Francisco Ferry 12x18 Matte Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'San Francisco Ferry 16x24 Lustre Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'San Francisco Ferry 16x24 Matte Print',
+      description:
+        'San Francisco, Calif.',
+      image: 'store-0002.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 5x7 Lustre Print',
       description:
         'Bulger, Penn.',
       image: 'store-0003.jpg',
-      price: 7.99,
-      quantity: 20
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
     },
     {
-      name: 'Ice Cream',
+      name: 'Trampoline 5x7 Matte Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
       category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 8x12 Lustre Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 8x12 Matte Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 12x18 Lustre Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 12x18 Matte Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 16x24 Lustre Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Trampoline 16x24 Matte Print',
+      description:
+        'Bulger, Penn.',
+      image: 'store-0003.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 5x7 Lustre Print',
       description:
         'Parksville, N.Y.',
       image: 'store-0004.jpg',
-      price: 3.99,
-      quantity: 50
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
     },
     {
-      name: 'Mud Bog',
+      name: 'Ice Cream 5x7 Matte Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
       category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 8x12 Lustre Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 8x12 Matte Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 12x18 Lustre Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 12x18 Matte Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 16x24 Lustre Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Ice Cream 16x24 Matte Print',
+      description:
+        'Parksville, N.Y.',
+      image: 'store-0004.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 5x7 Lustre Print',
       description:
         'Hawk Point, Mo.',
       image: 'store-0005.jpg',
-      price: 14.99,
-      quantity: 100
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
     },
     {
-      name: 'Mardi Gras',
+      name: 'Mud Bog 5x7 Matte Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 8x12 Lustre Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
       category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 8x12 Matte Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 12x18 Lustre Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 12x18 Matte Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 16x24 Lustre Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Mud Bog 16x24 Matte Print',
+      description:
+        'Hawk Point, Mo.',
+      image: 'store-0005.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Mardi Gras 5x7 Lustre Print',
       description:
         'New Orleans, La.',
       image: 'store-0006.jpg',
-      price: 399.99,
-      quantity: 30
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
     },
     {
-      name: 'Motorcycle Rally',
+      name: 'Mardi Gras 5x7 Matte Print',
+      description:
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Mardi Gras 8x12 Lustre Print',
+      description:
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
       category: categories[2]._id,
-      description:
-        'Sturgis, S.D.',
-      image: 'store-0007.jpg',
-      price: 199.99,
-      quantity: 30
+      price: 27.55,
+      quantity: 500
     },
     {
-      name: 'Volleyball',
+      name: 'Mardi Gras 8x12 Matte Print',
+      description:
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
       category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Mardi Gras 12x18 Lustre Print',
       description:
-        'Rapid City, S.D.',
-      image: 'store-0008.jpg',
-      price: 9.99,
-      quantity: 100
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
     },
     {
-      name: 'G-20 Protest',
-      category: categories[4]._id,
-      description: 'Pittsburgh, Penn.',
-      image: 'store-0009.jpg',
-      price: 1.99,
-      quantity: 1000
+      name: 'Mardi Gras 12x18 Matte Print',
+      description:
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
     },
     {
-      name: 'Bull 1',
-      category: categories[4]._id,
+      name: 'Mardi Gras 16x24 Lustre Print',
+      description:
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Mardi Gras 16x24 Matte Print',
+      description:
+        'New Orleans, La.',
+      image: 'store-0006.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 Test Print',
+      category: categories[0]._id,
       description:
         'Rapid City, S.D.',
       image: 'store-0010.jpg',
       price: 1.01,
       quantity: 1000
     },
-    {
-      name: 'Bull 2',
-      category: categories[4]._id,
-      description:
-        'Rapid City, S.D.',
-      image: 'store-0011.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'American Flags',
-      category: categories[4]._id,
-      description:
-        'New York, N.Y.',
-      image: 'store-0012.jpg',
-      price: 9.99,
-      quantity: 600
-    }
+  
+
+
+
+
+
+    
+    
+   // still needed in store for seeding
+
+    // {
+    //   name: 'Motorcycle Rally',
+    //   category: categories[2]._id,
+    //   description:
+    //     'Sturgis, S.D.',
+    //   image: 'store-0007.jpg',
+    //   price: 199.99,
+    //   quantity: 30
+    // },
+    // {
+    //   name: 'Volleyball',
+    //   category: categories[3]._id,
+    //   description:
+    //     'Rapid City, S.D.',
+    //   image: 'store-0008.jpg',
+    //   price: 9.99,
+    //   quantity: 100
+    // },
+    // {
+    //   name: 'G-20 Protest',
+    //   category: categories[4]._id,
+    //   description: 'Pittsburgh, Penn.',
+    //   image: 'store-0009.jpg',
+    //   price: 1.99,
+    //   quantity: 1000
+    // },
+    // {
+    //   name: 'Bull 1',
+    //   category: categories[0]._id,
+    //   description:
+    //     'Rapid City, S.D.',
+    //   image: 'store-0010.jpg',
+    //   price: 1.01,
+    //   quantity: 1000
+    // },
+    // {
+    //   name: 'Bull 2',
+    //   category: categories[4]._id,
+    //   description:
+    //     'Rapid City, S.D.',
+    //   image: 'store-0011.jpg',
+    //   price: 7.99,
+    //   quantity: 100
+    // },
+    // {
+    //   name: 'American Flags',
+    //   category: categories[4]._id,
+    //   description:
+    //     'New York, N.Y.',
+    //   image: 'store-0012.jpg',
+    //   price: 9.99,
+    //   quantity: 600
+    // },
+    // {
+    //   name: 'Elder, Younger, Not Presidential Vol. 1 12x8 Hardcover',
+    //   category: categories[8]._id,
+    //   description:
+    //     '12x8 Photo Book, Published in 2021',
+    //   image: 'store-0009.jpg',
+    //   price: 1.01,
+    //   quantity: 1000
+    // }
   ]);
 
   console.log('products seeded');
