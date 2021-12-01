@@ -1,10 +1,11 @@
-require('dotenv').config();
+// Copy the .env.example in the root into a .env file in this folder
+require('dotenv').config({ path: '../.env' });
 
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 
-const stripe = require('stripe')(process.env.REACT_APP_STRIPE_SECRET)
+const stripe = require('stripe')(process.env.REACT_APP_SECRET_KEY)
 
 //for Strip fulfillment
 
