@@ -454,77 +454,432 @@ db.once('open', async () => {
       quantity: 500
     },
     {
-      name: 'Bull 1 Test Print',
+      name: 'Motorcycle Rally 5x7 Lustre Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
       category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 5x7 Matte Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 8x12 Lustre Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 8x12 Matte Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 12x18 Lustre Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 12x18 Matte Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 16x24 Lustre Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Motorcycle Rally 16x24 Matte Print',
+      description:
+        'Sturgis, S.D.',
+      image: 'store-0007.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 5x7 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 5x7 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 8x12 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 8x12 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 12x18 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 12x18 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 16x24 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Volleyball 16x24 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0008.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 5x7 Lustre Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 5x7 Matte Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 8x12 Lustre Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 8x12 Matte Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 12x18 Lustre Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 12x18 Matte Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 16x24 Lustre Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'G-20 Protest 16x24 Matte Print',
+      description: 'Pittsburgh, Penn.',
+      image: 'store-0009.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 5x7 Lustre Print',
       description:
         'Rapid City, S.D.',
       image: 'store-0010.jpg',
-      price: 1.01,
-      quantity: 1000
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
     },
-  
-
-
-
-
-
-    
+    {
+      name: 'Bull 1 5x7 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 8x12 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 8x12 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 12x18 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 12x18 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 16x24 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 1 16x24 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0010.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 5x7 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 5x7 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 8x12 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 8x12 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 12x18 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 12x18 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 16x24 Lustre Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'Bull 2 16x24 Matte Print',
+      description:
+        'Rapid City, S.D.',
+      image: 'store-0011.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 5x7 Lustre Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[0]._id,
+      price: 20.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 5x7 Matte Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[1]._id,
+      price: 21.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 8x12 Lustre Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[2]._id,
+      price: 27.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 8x12 Matte Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[3]._id,
+      price: 29.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 12x18 Lustre Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[4]._id,
+      price: 45.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 12x18 Matte Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[5]._id,
+      price: 49.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 16x24 Lustre Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[6]._id,
+      price: 73.55,
+      quantity: 500
+    },
+    {
+      name: 'American Flags 16x24 Matte Print',
+      description:
+        'New York, N.Y.',
+      image: 'store-0012.jpg',
+      category: categories[7]._id,
+      price: 85.55,
+      quantity: 500
+    },
     
    // still needed in store for seeding
-
-    // {
-    //   name: 'Motorcycle Rally',
-    //   category: categories[2]._id,
-    //   description:
-    //     'Sturgis, S.D.',
-    //   image: 'store-0007.jpg',
-    //   price: 199.99,
-    //   quantity: 30
-    // },
-    // {
-    //   name: 'Volleyball',
-    //   category: categories[3]._id,
-    //   description:
-    //     'Rapid City, S.D.',
-    //   image: 'store-0008.jpg',
-    //   price: 9.99,
-    //   quantity: 100
-    // },
-    // {
-    //   name: 'G-20 Protest',
-    //   category: categories[4]._id,
-    //   description: 'Pittsburgh, Penn.',
-    //   image: 'store-0009.jpg',
-    //   price: 1.99,
-    //   quantity: 1000
-    // },
-    // {
-    //   name: 'Bull 1',
-    //   category: categories[0]._id,
-    //   description:
-    //     'Rapid City, S.D.',
-    //   image: 'store-0010.jpg',
-    //   price: 1.01,
-    //   quantity: 1000
-    // },
-    // {
-    //   name: 'Bull 2',
-    //   category: categories[4]._id,
-    //   description:
-    //     'Rapid City, S.D.',
-    //   image: 'store-0011.jpg',
-    //   price: 7.99,
-    //   quantity: 100
-    // },
-    // {
-    //   name: 'American Flags',
-    //   category: categories[4]._id,
-    //   description:
-    //     'New York, N.Y.',
-    //   image: 'store-0012.jpg',
-    //   price: 9.99,
-    //   quantity: 600
-    // },
+   
     // {
     //   name: 'Elder, Younger, Not Presidential Vol. 1 12x8 Hardcover',
     //   category: categories[8]._id,
