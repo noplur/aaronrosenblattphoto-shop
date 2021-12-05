@@ -47,7 +47,7 @@ function Nav() {
     <p className="arlogo">
       <a href="http://www.aaronrosenblattphoto.com" target="_blank">
       <img
-          src="/images/logo.jpg" title="Aaron Rosenblatt Photojournalism" height="75px" width="190px"
+          src="/images/logo.jpg" title="Aaron Rosenblatt Photojournalism" alt="Aaron Rosenblatt Photojournalism" height="75px" width="190px"
         /></a></p>
       <p className="title-first">
         portfolios

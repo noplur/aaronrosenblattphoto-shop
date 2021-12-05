@@ -31,6 +31,7 @@ function OrderHistory() {
                       <Link to={`/products/${_id}`}>
                         <img
                           title={name}
+                          alt={name}
                           src={`/images/${image}`}
                         />
                         <p>{name}</p>

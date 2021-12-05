@@ -8,7 +8,7 @@ import { idbPromise } from "../../utils/helpers";
 import { QUERY_CHECKOUT } from '../../utils/queries';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/react-hooks';
-import { Elements } from '@stripe/react-stripe-js';
+// import { Elements } from '@stripe/react-stripe-js';
 
 const stripePublishableKey = 'pk_live_51JwzcFLzDJN6vPr4BdDQXOo0IJV2FrFZFlGulRlolx5mhfUOX378ZxVyrcZBw5IculVENGLLJ3X6KwTDvZJMcyEc00C5YcvkRI'
 

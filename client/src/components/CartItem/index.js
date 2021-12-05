@@ -42,6 +42,7 @@ const CartItem = ({ item }) => {
         <img
           src={`/images/${item.image}`}
           title=""
+          alt=""
         />
       </div>
       <div>
