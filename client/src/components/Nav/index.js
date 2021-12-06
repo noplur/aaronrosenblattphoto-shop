@@ -50,6 +50,14 @@ function Nav() {
           src="/images/logo.jpg" title="Aaron Rosenblatt Photojournalism" alt="Aaron Rosenblatt Photojournalism" height="75px" width="190px"
         /></a></p>
       <p className="title-first">
+      <nav>
+    {showNavigation()}
+    <p className="subtitle">
+      <Link to="/">
+        Shop
+      </Link>
+    </p>
+    </nav>
         portfolios
       </p>
       <p className="subtitle">
@@ -120,14 +128,6 @@ function Nav() {
       <a href="http://www.aaronrosenblattphoto.com/pages/bio" target="_blank">
         bio
       </a></p>
-    <nav>
-    {showNavigation()}
-    <p className="subtitle">
-      <Link to="/">
-        Shop
-      </Link>
-    </p>
-    </nav>
     <div className="socialButtons">
     <div className="twitter"><a href="https://twitter.com/aaronpix" target="_blank">
       <RiTwitterFill /> </a>
