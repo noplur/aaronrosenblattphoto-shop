@@ -54,7 +54,7 @@ db.once('open', async () => {
         'Vermont forest',
       image: 'store-0001.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -126,7 +126,7 @@ db.once('open', async () => {
         'San Francisco, Calif.',
       image: 'store-0002.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -198,7 +198,7 @@ db.once('open', async () => {
         'Bulger, Penn.',
       image: 'store-0003.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -270,7 +270,7 @@ db.once('open', async () => {
         'Parksville, N.Y.',
       image: 'store-0004.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -342,7 +342,7 @@ db.once('open', async () => {
         'Hawk Point, Mo.',
       image: 'store-0005.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -414,7 +414,7 @@ db.once('open', async () => {
         'New Orleans, La.',
       image: 'store-0006.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -486,7 +486,7 @@ db.once('open', async () => {
         'Sturgis, S.D.',
       image: 'store-0007.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -558,7 +558,7 @@ db.once('open', async () => {
         'Rapid City, S.D.',
       image: 'store-0008.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -626,7 +626,7 @@ db.once('open', async () => {
       description: 'Pittsburgh, Penn.',
       image: 'store-0009.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -694,7 +694,7 @@ db.once('open', async () => {
         'Rapid City, S.D.',
       image: 'store-0010.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -766,7 +766,7 @@ db.once('open', async () => {
         'Rapid City, S.D.',
       image: 'store-0011.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -838,7 +838,7 @@ db.once('open', async () => {
         'New York, N.Y.',
       image: 'store-0012.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -910,7 +910,7 @@ db.once('open', async () => {
         'San Francisco, Calif.',
       image: 'store-0013.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -982,7 +982,7 @@ db.once('open', async () => {
         'San Francisco, Calif.',
       image: 'store-0014.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1054,7 +1054,7 @@ db.once('open', async () => {
         'Berkeley, Calif.',
       image: 'store-0015.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1126,7 +1126,7 @@ db.once('open', async () => {
         'Fairfield, Calif',
       image: 'store-0016.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1198,7 +1198,7 @@ db.once('open', async () => {
         'Berkeley, Calif.',
       image: 'store-0017.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1270,7 +1270,7 @@ db.once('open', async () => {
         'Emeryville, Calif.',
       image: 'store-0018.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1342,7 +1342,7 @@ db.once('open', async () => {
         'Oakland, Calif.',
       image: 'store-0019.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1414,7 +1414,7 @@ db.once('open', async () => {
         'Berkeley, Calif.',
       image: 'store-0020.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1486,7 +1486,7 @@ db.once('open', async () => {
         'Berkeley, Calif.',
       image: 'store-0021.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1558,7 +1558,7 @@ db.once('open', async () => {
         'Filandia, Colombia',
       image: 'store-0022.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1630,7 +1630,7 @@ db.once('open', async () => {
         'Filandia, Colombia',
       image: 'store-0023.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1702,7 +1702,7 @@ db.once('open', async () => {
         'Zipaquira, Colombia',
       image: 'store-0024.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1774,7 +1774,7 @@ db.once('open', async () => {
         'New York, N.Y.',
       image: 'store-0025.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
@@ -1846,7 +1846,7 @@ db.once('open', async () => {
         'Bulger, Penn.',
       image: 'store-0026.jpg',
       category: categories[3]._id,
-      price: 32.88,
+      price: 33.00,
       quantity: 500
     },
     {
