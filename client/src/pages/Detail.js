@@ -117,6 +117,7 @@ function Detail() {
 
           <img
             src={`/images/${currentProduct.image}`}
+            title={currentProduct.name}
             alt={currentProduct.name}
           />
           <Cart />

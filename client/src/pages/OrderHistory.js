@@ -30,6 +30,7 @@ function OrderHistory() {
                     <div key={index} className="card px-1 py-1">
                       <Link to={`/products/${_id}`}>
                         <img
+                          title={name}
                           alt={name}
                           src={`/images/${image}`}
                         />

@@ -7,7 +7,8 @@ const { signToken } = require('../utils/auth');
 
 const stripe = require('stripe')(process.env.REACT_APP_SECRET_KEY)
 
-//for Strip fulfillment
+
+//for Stripe fulfillment
 
 // This is your Stripe CLI webhook secret for testing your endpoint locally.  use: getenv('STRIPE_WEBHOOK_SECRET')
 // const endpointSecret = 'sk_test_51JwzcFLzDJN6vPr4qdUekNdohxYRQcR5B3qhozbM4NHQsZ0sbauSK7DjJMKgoL8zUziUC1JUMbxx5TV3jSP84t1600eKzwO26R';
@@ -151,7 +152,7 @@ const resolvers = {
   const product = await stripe.products.create({
     name: products[i].name,
     description: products[i].description,
-    images: [`${url}/images/${products[i].image}`]
+    images: [`${url}/images/${products[i].image[i]}`]
   });
 
   // generate price id using the product id
@@ -175,6 +176,7 @@ const resolvers = {
     shipping_address_collection: {
       allowed_countries: ['US', 'CA'],
     },
+    allow_promotion_codes: true,
     shipping_options: [
       {
         shipping_rate_data: {
@@ -218,27 +220,27 @@ const resolvers = {
           }
         }
       },
-      {
-        shipping_rate_data: {
-          type: 'fixed_amount',
-          fixed_amount: {
-            amount: 0.00,
-            currency: 'usd',
-          },
-          display_name: 'Free Shipping',
-          // Delivers in exactly 2-3 business days
-          delivery_estimate: {
-            minimum: {
-              unit: 'business_day',
-              value: 2,
-            },
-            maximum: {
-              unit: 'business_day',
-              value: 3,
-            },
-          }
-        }
-      },
+      // {
+      //   shipping_rate_data: {
+      //     type: 'fixed_amount',
+      //     fixed_amount: {
+      //       amount: 0.00,
+      //       currency: 'usd',
+      //     },
+      //     display_name: 'Free Shipping',
+      //     // Delivers in exactly 2-3 business days
+      //     delivery_estimate: {
+      //       minimum: {
+      //         unit: 'business_day',
+      //         value: 2,
+      //       },
+      //       maximum: {
+      //         unit: 'business_day',
+      //         value: 3,
+      //       },
+      //     }
+      //   }
+      // },
     ],
     line_items,
     mode: 'payment',
