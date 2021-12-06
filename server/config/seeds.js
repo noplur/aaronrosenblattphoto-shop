@@ -1103,15 +1103,6 @@ db.once('open', async () => {
       quantity: 500
     },
     {
-      name: 'Shopping Cart and Field 5x7 Lustre Print',
-      description:
-        'Fairfield, Calif',
-      image: 'store-0016.jpg',
-      category: categories[0]._id,
-      price: 22.88,
-      quantity: 500
-    },
-    {
       name: 'Shopping Cart and Field 5x7 Matte Print',
       description:
         'Fairfield, Calif',
