@@ -103,6 +103,13 @@ function Nav() {
         refugees faith & community
       </a></p>
       <p className="title">
+        freelance
+      </p>
+      <p className="subtitle">
+      <a href="http://www.aaronrosenblattphoto.com/weddings" target="_blank">
+        weddings
+      </a></p>
+      <p className="title">
         recent work
       </p>
       <p className="subtitle">
@@ -116,10 +123,6 @@ function Nav() {
       <p className="subtitle">
       <a href="https://www.instagram.com/aaronpix/" target="_blank">
         instagram
-      </a></p>
-      <p className="subtitle">
-      <a href="http://www.aaronrosenblattphoto.com/weddings" target="_blank">
-        weddings
       </a></p>
       <p className="title">
         about
