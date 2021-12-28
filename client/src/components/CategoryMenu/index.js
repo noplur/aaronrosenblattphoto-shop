@@ -40,7 +40,7 @@ function CategoryMenu() {
 
   return (
     <div className="category">
-      <h2 className="category-text-small">These photographs are exclusively available as prints from the store. If you would like an print option not seen here, please contact me at <a href = "mailto: aaronrosenblattphoto@gmail.com" target="_blank">aaronrosenblattphoto@gmail.com</a> </h2>
+      <h2 className="category-text-small">These photographs are exclusively available as prints from the store. If you would like a print option not seen here, please contact me at <a href = "mailto: aaronrosenblattphoto@gmail.com" target="_blank">aaronrosenblattphoto@gmail.com</a> </h2>
       <h2 className="category-text-small">All orders may take several days to process.</h2>
       <h2 className="category-text">Choose a Category:</h2>
       {categories.map(item => (
